@@ -1,0 +1,38 @@
+# GreenStar Configuration
+
+# Prefix (used in all messages)
+prefix: "&a&lGreenStar &8» &r"
+
+# Broadcast
+# Placeholders: {message}, {sender}
+# Support multi-line with \n or by putting each line on a new indented line
+broadcast:
+  format: |
+    {prefix}           &e&lALERT
+    {prefix}&7▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+    {prefix} &7⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇ ⬇
+    {prefix} &r{message}
+    {prefix} &7⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆ ⬆
+    {prefix}&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  sound:
+    enabled: true
+    name: "minecraft:block.note_block.pling"
+    volume: 1.0
+    pitch: 1.0
+
+# Staff Chat
+# Placeholders: {message}, {sender}, {server}
+staff-chat:
+  format: "{prefix} &f{sender} &8» &r{message}"
+
+# Staff Join notification
+# Placeholders: {player}, {server}
+staff-join:
+  enabled: true
+  message: "{prefix}&e{player} &7joined the network on &f{server}"
+
+# Messages
+messages:
+  no-permission: "{prefix}&cYou don't have permission!"
+  usage-bc: "{prefix}&eUsage: /bc <message>"
+  usage-staff: "{prefix}&eUsage: /staff <message>"
