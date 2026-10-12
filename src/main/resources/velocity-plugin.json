@@ -1,0 +1,8 @@
+{
+  "id": "greenstar",
+  "name": "GreenStar",
+  "version": "1.0.0",
+  "description": "Broadcast & Staff Chat plugin for Velocity",
+  "authors": ["Greenbot5454"],
+  "main": "ir.Greenbot.greenstar.GreenStar"
+}
